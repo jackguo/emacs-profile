@@ -27,6 +27,8 @@
 			(c++-mode . "cc-mode")
 			(python-mode . "python")
 			(other . "gnu")))
-(setq-default c-basic-offset 2)
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+;;(setq-default c-basic-offset 2)
 (setq-default c-auto-newline 1)
 
