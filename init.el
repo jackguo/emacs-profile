@@ -27,6 +27,7 @@
 			(c++-mode . "cc-mode")
 			(python-mode . "python")
 			(other . "gnu")))
+(require 'scala-mode2)
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 ;;(setq-default c-basic-offset 2)

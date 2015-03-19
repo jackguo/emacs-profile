@@ -7,3 +7,5 @@ This is a repository for my customized settings of emacs24.
 >* customized start-up and editing behavior etc.
 
 >* google c style for c/c++ src code
+
+>* scala-mode and style (from https://github.com/hvesalai/scala-mode2)
