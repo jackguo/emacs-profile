@@ -30,6 +30,8 @@
 (require 'scala-mode2)
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
+;;(add-hook 'scala-mode-hook
+;;      (lambda () (local-set-key (kbd "RET") 'newline-and-indent)))
 ;;(setq-default c-basic-offset 2)
 (setq-default c-auto-newline 1)
 

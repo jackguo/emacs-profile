@@ -161,5 +161,7 @@ When started, runs `scala-mode-hook'.
                '("\\.\\(scala\\|sbt\\)\\'" . scala-mode))
   (modify-coding-system-alist 'file "\\.\\(scala\\|sbt\\)\\'" 'utf-8))
 
+(add-hook 'scala-mode-hook
+      (lambda () (local-set-key (kbd "RET") 'newline-and-indent)))
 (provide 'scala-mode2)
 ;;; scala-mode2.el ends here
