@@ -1,7 +1,8 @@
 (delete-selection-mode 1)
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp")
 (menu-bar-mode -1)
-(tool-bar-mode -1)
+;; (tool-bar-mode -1)
 (show-paren-mode 1)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
@@ -20,7 +21,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(if (display-graphic-p) (load-theme 'solarized))
+;; (if (display-graphic-p) (load-theme 'solarized))
+(load-theme 'solarized t)
 (setq c-default-style '((java-mode . "java") 
 			(awk-mode . "awk") 
 			(c-mode . "cc-mode") 
@@ -34,4 +36,3 @@
 ;;      (lambda () (local-set-key (kbd "RET") 'newline-and-indent)))
 ;;(setq-default c-basic-offset 2)
 (setq-default c-auto-newline 1)
-
