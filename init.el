@@ -36,3 +36,4 @@
 ;;      (lambda () (local-set-key (kbd "RET") 'newline-and-indent)))
 ;;(setq-default c-basic-offset 2)
 (setq-default c-auto-newline 1)
+(put 'upcase-region 'disabled nil)
