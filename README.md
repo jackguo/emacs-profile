@@ -9,3 +9,5 @@ This is a repository for my customized settings of emacs24.
 >* google c style for c/c++ src code
 
 >* scala-mode and style (from https://github.com/hvesalai/scala-mode2)
+
+>* groovy-mode and style (from https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes)
