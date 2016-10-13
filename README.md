@@ -11,3 +11,5 @@ This is a repository for my customized settings of emacs24.
 >* scala-mode and style (from https://github.com/hvesalai/scala-mode2)
 
 >* groovy-mode and style (from https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes)
+
+>* modified js2-mode (original from https://github.com/mooz/js2-mode)
