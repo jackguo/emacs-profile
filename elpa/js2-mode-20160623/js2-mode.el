@@ -990,14 +990,23 @@ callback to `js2-mode-wait-for-parse', and your callback will be
 called after the new parse tree is built.  This can take some time
 in large files.")
 
-(defface js2-warning
+(if (display-graphic-p)
+    (defface js2-warning
+      `((((class color) (background light))
+	 (:underline "orange"))
+	(((class color) (background dark))
+	 (:underline  "orange"))
+	(t (:underline t)))
+      "Face for JavaScript warnings."
+      :group 'js2-mode)
+  (defface js2-warning
   `((((class color) (background light))
-     (:underline  "brightred"))
-    (((class color) (background dark))
      (:underline "brightred"))
+    (((class color) (background dark))
+     (:underline  "brightred"))
     (t (:underline t)))
   "Face for JavaScript warnings."
-  :group 'js2-mode)
+  :group 'js2-mode))
 
 (defface js2-error
   `((((class color) (background light))
@@ -1076,9 +1085,13 @@ Not currently used."
   "Face used to highlight brackets in jsdoc html tags."
   :group 'js2-mode)
 
-(defface js2-external-variable
-  '((t :foreground "brightred"))
-  "Face used to highlight undeclared variable identifiers.")
+(if (display-graphic-p)
+    (defface js2-external-variable
+      '((t :foreground "orange"))
+      "Face used to highlight undeclared variable identifiers.")
+    (defface js2-external-variable
+      '((t :foreground "brightred"))
+      "Face used to highlight undeclared variable identifiers."))
 
 (defcustom js2-init-hook nil
   ;; FIXME: We don't really need this anymore.

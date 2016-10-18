@@ -15,10 +15,11 @@
 (when (display-graphic-p)
   (tool-bar-mode -1)
   (setq initial-frame-alist '((width . 120) (height . 50))) 
-  (add-to-list 'default-frame-alist '(font . "Menlo-12")))
+  (add-to-list 'default-frame-alist '(font . "Monaco-13")))
+;;  (custom-set-variables '(solarized-degrade 1) '(solarized-diff-mode 'low)))
 
 (load-theme 'solarized t)
-(set-frame-parameter nil 'background-mode 'dark)
+(set-frame-parameter nil 'background-mode (if (display-graphic-p) 'light 'dark))
 (set-terminal-parameter nil 'background-mode 'dark)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
