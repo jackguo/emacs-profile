@@ -19,7 +19,7 @@
 ;;  (custom-set-variables '(solarized-degrade 1) '(solarized-diff-mode 'low)))
 
 (load-theme 'solarized t)
-(set-frame-parameter nil 'background-mode (if (display-graphic-p) 'light 'dark))
+(set-frame-parameter nil 'background-mode 'dark) ;(if (display-graphic-p) 'light 'dark))
 (set-terminal-parameter nil 'background-mode 'dark)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -56,3 +56,4 @@
 (setq-default c-auto-newline 1)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (put 'upcase-region 'disabled nil)
+(put 'erase-buffer 'disabled nil)
